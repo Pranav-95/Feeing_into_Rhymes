@@ -92,7 +92,8 @@ margin-right:0px;
 <div class="card-container">
 
     <div class="card">
-      <img src="<%=image %>" >
+        <img src="data:image/<%image.contentType%>;base64,
+                <%=image.data.toString('base64')%>" >
     </div>
 
 
