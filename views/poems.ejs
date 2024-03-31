@@ -191,7 +191,8 @@
 <div class="card-container">
   <% para.forEach(function(poem) { %>
     <div class="card">
-        <img src="<%= poem.image %>" >
+          <img src="data:image/<%=poem.image.contentType%>;base64,
+                  <%=poem.image.data.toString('base64')%>" >
         <div class="card-content">
             <h3><%= poem.topic %></h3>
 
